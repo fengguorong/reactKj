@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/js/upload.js"></script>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
+<script src="/js/shouye.js"></script>
+<script>
+    window.onload=function(){
+        var lable=document.querySelector("input");
+        var uploadObj=new upload("/upload",lable);
+        uploadObj.up();
+    }
+</script>
